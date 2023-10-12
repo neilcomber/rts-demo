@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import EventComponent from './events/EventComponent';
 
 
 const el = document.getElementById('root')
@@ -7,9 +8,11 @@ const root = ReactDOM.createRoot(el!)
 
 
 const App = () => {
-  return <div>
-    <h1>Hi There!</h1>
-  </div>
+  return (
+    <div>
+      <EventComponent />
+    </div>
+  );
 }
 
 root.render(<App />);
